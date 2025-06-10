@@ -144,7 +144,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 If you use VAST in your research, please cite our paper:
 
 ```
-Pasca, E.M.; Delinschi, D.; Erdei, R.; Baraian, I.; Matei, O. A Vulnerable-by-Design IoT Sensor Framework for Cybersecurity in Smart Agriculture. Agriculture 2025, X, X. https://doi.org/10.3390/xxxxx
+Pasca, Emil Marian, Daniela Delinschi, Rudolf Erdei, Iulia Baraian, and Oliviu Dorin Matei. 2025. "A Vulnerable-by-Design IoT Sensor Framework for Cybersecurity in Smart Agriculture" Agriculture 15, no. 12: 1253. https://doi.org/10.3390/agriculture15121253
 ```
 
 ## Ethical Considerations and Security Disclosure
