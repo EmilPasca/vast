@@ -9,7 +9,8 @@
 | **data_storage.py** | `test_data_storage.py` | 24 | ✅ All Passing |
 | **vulnerability_manager.py** | `test_vulnerability_manager.py` | 44 | ✅ All Passing |
 | **weather_event_manager.py** | `test_weather_event_manager.py` | 45 | ✅ All Passing |
-| **TOTAL** | | **113** | **✅ 100%** |
+| **temp sensor** (sensors/temp/app.py) | `test_temperature_sensor.py` | 42 | ✅ All Passing |
+| **TOTAL** | | **155** | **✅ 100%** |
 
 ### 🔄 In Progress
 
@@ -139,13 +140,30 @@ These tests serve multiple purposes:
 4. Set up CI/CD with GitHub Actions
 5. Add coverage reporting and badges
 
+### 4. temperature_sensor.py (42 tests)
+Tests the IoT temperature sensor including fault simulation and data formatting:
+- ✅ 5 fault modes (none, stuck, drift, spike, dropout)
+- ✅ All 4 data formats (rich_json, minimal, csv, binary)
+- ✅ Calibration offset (positive, negative, zero)
+- ✅ Binary format roundtrip (pack & unpack)
+- ✅ Integration with data client
+- ✅ Edge cases (extreme offsets, negative temps)
+
+**Key Test**: Validates that drift mode shows gradual temperature increase (+0.1°C per reading) over time.
+
 ## Metrics
 
-- **Total Tests**: 113
+- **Total Tests**: 155
 - **Pass Rate**: 100%
 - **Average Test Duration**: <0.5s per test
 - **Code Coverage**: TBD (pending full test suite)
 
+## Documentation
+
+- **RUNNING_TESTS.md**: Comprehensive guide for running tests
+- **TEST_SUMMARY.md**: This file - test suite overview
+
 ---
 
 *Last Updated: 2025-11-14*
+*Test Suite Version: 1.0*
